@@ -1,5 +1,5 @@
 # mybatis公用插件
-##用法
+## 用法
 
 在mybatis-config.xml中加入如下配置
   ```xml
@@ -13,6 +13,6 @@
     </plugins>
   ```
   
-##说明
+## 说明
 1. 分页查询插件PaginationInterceptor
 2. 性能调试插件PerformanceInterceptor
