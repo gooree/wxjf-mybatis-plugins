@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
 import com.wxjfkg.mybatis.dialect.Dialect;
 import com.wxjfkg.mybatis.dialect.DialectFactory;
 import com.wxjfkg.mybatis.jdbc.Page;
-import com.wxjfkg.mybatis.jdbc.Pagination;
+import com.wxjfkg.mybatis.jdbc.Pageable;
 import com.wxjfkg.mybatis.utils.JdbcUtils;
 
 /**
@@ -60,8 +60,8 @@ public class PaginationInterceptor implements Interceptor {
 		BoundSql boundSql = mappedStatement.getBoundSql(parameter);
 
 		if (StringUtils.isNotBlank(boundSql.getSql())
-				&& parameter instanceof Pagination) {
-			Pagination paging = (Pagination) parameter;
+				&& parameter instanceof Pageable) {
+			Pageable paging = (Pageable) parameter;
 			Page page = new Page(paging.getLength(), paging.getStart());
 			page.setLazy(paging.isLazy());
 			page.setTotalRecord(paging.getTotal());

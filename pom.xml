@@ -4,7 +4,7 @@
 
 	<groupId>com.wxjfkg</groupId>
 	<artifactId>wxjf-mybatis-plugins</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>wxjf-mybatis-plugins</name>
 

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.wxjfkg.mybatis.jdbc.Page;
-import com.wxjfkg.mybatis.jdbc.Pagination;
+import com.wxjfkg.mybatis.jdbc.Pageable;
 
 public interface BaseDao<PK extends Serializable , T> {
 	
@@ -15,7 +15,7 @@ public interface BaseDao<PK extends Serializable , T> {
 	
 	public List<T> queryForList(Map<String, Object> parameterMap);
 	
-	public Page<T> queryForPage(Pagination pagination);
+	public Page<T> queryForPage(Pageable pagination);
 	
 	public int save(T entity);
 	

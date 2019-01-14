@@ -3,11 +3,11 @@ package com.wxjfkg.mybatis.jdbc;
 import java.io.Serializable;
 
 /**
- * Page 分页结果
+ * Pageable 分页参数
  * 
  * @author guorui@wxjfkg.com
  */
-public class Pagination implements Serializable {
+public class Pageable implements Serializable {
 
 	private int start = -1;
 
